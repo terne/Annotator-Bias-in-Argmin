@@ -1,12 +1,29 @@
 # Annotator-Bias-in-Argmin
 
+If using this data, please cite:
 
+```
+@inproceedings{thorn-jakobsen-etal-2022-sensitivity,
+    title = "The Sensitivity of Annotator Bias to Task Definitions in Argument Mining",    
+    author = "Thorn Jakobsen, Terne Sasha  and
+      Barrett, Maria  and
+      S{\o}gaard, Anders  and
+      Lassen, David",
+    booktitle = "Proceedings of the 16th Linguistic Annotation Workshop (LAW-XVI) within LREC2022",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.law-1.6",
+    pages = "44--61",
+}
+```
 
 The 600 re-annotated sentences are from the UKP Sentential Argument Mining Corpus (Stab et al., 2018). To retrieve the sentences, firstly request the data from the authors (https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2345).
 
  annotations/extract\_sentences.py shows how to easily find the correct sentences from the UKP data and add them to a dataframe with our annotations from prolific (the same method can be applied for the mTurk annotations).
 
-Data columns:
+### Data columns:
 
 "Input.set": The set (either val or train set) that the sentence belongs.
 
